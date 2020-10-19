@@ -44,7 +44,7 @@
 //
 var server = null;
 if(window.location.protocol === 'http:')
-	server = "http://" + window.location.hostname + ":8080/janus";
+	server = "http://" + window.location.hostname + ":8088/janus";
 else
 	server = "https://" + window.location.hostname + ":8089/janus";
 
@@ -368,12 +368,12 @@ function startStream() {
 	streaming.send({ message: body });
 	// No remote video yet
 	$('#stream').append('<video class="rounded centered" id="waitingvideo" width="100%" height="100%" />');
-	if(spinner == null) {
-		var target = document.getElementById('stream');
-		spinner = new Spinner({top:100}).spin(target);
-	} else {
-		spinner.spin();
-	}
+	//if(spinner == null) {
+	//	var target = document.getElementById('stream');
+	//	spinner = new Spinner({top:100}).spin(target);
+	//} else {
+	//	spinner.spin();
+	//}
 	// Get some more info for the mountpoint to display, if any
 	getStreamInfo();
 }

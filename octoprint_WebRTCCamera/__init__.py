@@ -40,7 +40,7 @@ class WebRTCCameraPlugin(octoprint.plugin.StartupPlugin,
 		# Define your plugin's asset files to automatically include in the
 		# core UI here.
 		return dict(
-			js=["js/webrtccamera.js", "js/adapter.min.js", "js/janus.js", "js/streamingtest.js"],
+			js=["js/webrtccamera.js", "js/adapter-7.2.5.js", "js/janus.js", "js/streamingtest.js"],
 			css=["css/WebRTCCamera.css"],
 			less=["less/WebRTCCamera.less"]
 		)
@@ -49,7 +49,7 @@ class WebRTCCameraPlugin(octoprint.plugin.StartupPlugin,
 
 	def get_template_configs(self):
 		return [
-			dict(type="navbar", custom_bindings=False),
+			#dict(type="navbar", custom_bindings=False),
 			dict(type="settings", custom_bindings=False)
 		]
 
