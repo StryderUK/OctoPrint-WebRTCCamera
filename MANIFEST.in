@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_WebRTCCamera/templates *
+recursive-include octoprint_WebRTCCamera/translations *
+recursive-include octoprint_WebRTCCamera/static *
